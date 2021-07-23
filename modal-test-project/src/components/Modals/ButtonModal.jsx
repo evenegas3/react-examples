@@ -9,5 +9,4 @@ function ButtonModal() {
     );
   }
 
-  
 export default ButtonModal;

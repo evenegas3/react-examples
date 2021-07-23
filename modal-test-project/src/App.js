@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
-import ButtonModal from './ButtonModals/ButtonModal';
+import ButtonModal from './components/Modals/ButtonModal';
 
 function App() {
 
@@ -14,14 +14,16 @@ function App() {
   }
 
   return(
-    <>
-        <button onClick={setModalIsOpenToTrue}>Click to Open Modal</button>
+    <div className="container">
+      <p>Homepage</p>
+      <button className="btn" onClick={setModalIsOpenToTrue}>Open Modal</button>
 
-        <Modal isOpen={modalIsOpen}>
-            <button onClick={setModalIsOpenToFalse}>x</button>
-            <ButtonModal/>
-        </Modal>
-    </>
+      <Modal isOpen={modalIsOpen}>
+        <ButtonModal/>
+          <button className="btn" onClick={setModalIsOpenToFalse}>Close</button>
+      </Modal>
+
+    </div>
   )
 }
 
