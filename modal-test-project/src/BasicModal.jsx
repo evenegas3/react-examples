@@ -2,12 +2,12 @@
 
 import React from 'react'
 
-const BasicModal = () => {
+function BasicModal() {
     return (
-        <div>
-            <p>Hello from BasicModal.jsx</p>
-        </div>
-    )
-}
+      <div>
+          <p>Hello from basicmodal.jsx</p>
+      </div>
+    );
+  }
 
-export default BasicModal
+export default BasicModal;
