@@ -28,7 +28,12 @@ body {
   display: flex;
 }
 
-.container {
+.netflix-logo {
+  height: 50px;
+  width: 98px;
+}
+
+.container1 {
   /* max-width: 500px;
   margin: 30px auto;
   overflow: auto;
@@ -36,10 +41,15 @@ body {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px; */
+
   background: #ce8888;
   flex-basis: 100px;
-  height: 100px;
+  height: 500px;
   margin: 5px;
+  border: 1px solid steelblue;
+  overflow: auto;
+
+  /* min-height: 300px; */
 }
 
 .container2 {
@@ -50,10 +60,19 @@ body {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px; */
-  background: #ce8888;
-  flex-basis: 100px;
-  height: 100px;
+  /* background: #ce8888; */
+  /* flex-basis: 100px; */
+  /* height: 100px; */
+  /* margin: 5px; */
+  /* border: 1px solid steelblue; */
+  /* flex-basis: 100px; */
   margin: 5px;
+
+  height: 500px;
+  width: 1000px;
+  /* background-color: powderblue; */
+  border: 1px solid steelblue;
+
 }
 
 .header {

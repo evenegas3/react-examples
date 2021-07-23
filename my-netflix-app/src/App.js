@@ -1,52 +1,21 @@
-// import logo from './logo.svg';
-// import './App.css';
+import SidePanel from "./components/SidePanel";
 
 function App() {
   return (
-    <div className="overlay">
+    <div className="Netflix-entire-overlay">
+      <h1>Netflix App Homepage</h1>
 
-      <div className="container">
-        <p>sad</p>
-      </div>
+      <div className="overlay">
+          <SidePanel />
 
-      <div className="container">
-        <p>saasdd</p>
-      </div>
+          <div className="container2">
+            <p>saasdd</p>
+          </div>
+
+        </div>
 
     </div>
-
   );
 }
 
 export default App;
-
-
-{/* <div className="App">
-<header className="App-header">
-  <img src={logo} className="App-logo" alt="logo" />
-  <p>
-    Edit <code>src/App.js</code> and save to reload.
-  </p>
-  <a
-    className="App-link"
-    href="https://reactjs.org"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Learn React
-  </a>
-</header>
-</div> */}
-
-
-    // <div className="App">
-
-      {/* <div className="container">
-        <p>sad</p>
-      </div>
-
-      <div className="container2">
-        <p>saasdasd</p>
-      </div>
-
-    </div> */}
