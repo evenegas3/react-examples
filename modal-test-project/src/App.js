@@ -5,6 +5,7 @@ import ButtonModal from './components/Modals/ButtonModal';
 function App() {
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [count, setCount] = useState(0);
 
   const setModalIsOpenToTrue = () =>{
       setModalIsOpen(true)
@@ -13,10 +14,18 @@ function App() {
       setModalIsOpen(false)
   }
 
+  const wrapperFunction = () => {
+    setModalIsOpenToTrue();
+    setCount(count + 1);
+  }
+
   return(
     <div className="container">
       <p>Homepage</p>
-      <button className="btn" onClick={setModalIsOpenToTrue}>Open Modal</button>
+      <p>Button has been clicked {count} times.</p>
+
+      <button className="btn" onClick={() => wrapperFunction()}>Open Modal</button>
+      <button className="btn" onClick={() => setCount(0)}>Reset Counter</button>
 
       <Modal isOpen={modalIsOpen}>
         <ButtonModal/>
