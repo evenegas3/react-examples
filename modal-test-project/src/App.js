@@ -28,8 +28,10 @@ function App() {
       <button className="btn" onClick={() => setCount(0)}>Reset Counter</button>
 
       <Modal isOpen={modalIsOpen}>
-        <ButtonModal/>
-          <button className="btn" onClick={setModalIsOpenToFalse}>Close</button>
+        <ButtonModal secretFirst="e" secretLast="v"/>
+          <button className="btn" data-backdrop="static" onClick={setModalIsOpenToFalse}>Close</button>
+          {/* <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button> */}
+
       </Modal>
 
     </div>
